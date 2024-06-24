@@ -37,6 +37,15 @@ export default function Home() {
       <h2 className="font-bold absolute bottom-12 left-1/2 transform -translate-x-1/2 text-5xl">
         Result: {number1 + number2}
       </h2>
+      <button
+        onClick={() => {
+          setNumber1(0);
+          setNumber2(0);
+        }}
+        className="font-bold absolute bottom-12 right-12"
+      >
+        Reset
+      </button>
     </main>
   );
 }
